@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        #cas{
+            display: block;
+            border:1px solid;
+            margin:auto;
+        }
+    </style>
+    <title>Canvas Line</title>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+    <div >
+        <canvas id="cas" width="1200" height="800">浏览器不支持canvas</canvas>
+    </div>
+    <script>
+        var canvas = document.getElementById('cas');
+        var content = canvas.getContext('2d');
+
+        content.beginPath();
+        content.moveTo(0,0);
+        content.lineTo(450, 50);
+        content.stroke();
+    </script>
+</body>
+</html>
